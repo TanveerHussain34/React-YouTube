@@ -1,19 +1,20 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <div className="mx-auto w-full max-w-7xl">
-      <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
-        <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
-          <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
-            <h2 className="text-4xl font-bold sm:text-5xl">
+      <aside className="w-full h-screen flex flex-col sm:flex-row justify-evenly items-center text-black">
+        <div className="max-w-screen-xl order-2 m-4">
+          <div className="text-center sm:text-right sm:ml-auto">
+            <h2 className="text-3xl lg:text-5xl font-bold">
               Download Now
-              <span className="hidden sm:block text-4xl">Lorem Ipsum</span>
+              <span className="hidden sm:block text-3xl lg:text-5xl">
+                Lorem Ipsum
+              </span>
             </h2>
 
             <Link
-              className="inline-flex text-white items-center px-6 py-3 font-medium bg-orange-700 rounded-lg hover:opacity-75"
+              className="inline-flex text-white items-center px-4 lg:px-6 py-2 lg:py-3 font-medium bg-orange-700 rounded-lg hover:opacity-75 mt-5"
               to="/"
             >
               <svg
@@ -31,24 +32,24 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
+        <div className="">
           <img
-            className="w-96"
+            className="w-64 xs:w-80 lg:w-96 m-4"
             src="https://i.ibb.co/5BCcDYB/Remote2.png"
             alt="image1"
           />
         </div>
       </aside>
 
-      <div className="grid  place-items-center sm:mt-20">
+      <div className="grid place-items-center">
         <img
-          className="sm:w-96 w-48"
+          className="w-64 xs:w-80 sm:w-96"
           src="https://i.ibb.co/2M7rtLk/Remote1.png"
           alt="image2"
         />
       </div>
 
-      <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">
+      <h1 className="text-center text-3xl xs:text-4xl sm:text-5xl py-5 xs:py-10 font-medium">
         Lorem Ipsum Yojo
       </h1>
     </div>

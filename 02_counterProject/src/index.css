@@ -31,8 +31,13 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.5em;
   line-height: 1.1;
+}
+
+p {
+  font-size: 1.75em;
+  line-height: 1.4;
 }
 
 button {
@@ -71,4 +76,34 @@ button {
   font-size: 48px;
   padding: 10px;
   margin: 20px;
+}
+
+@media (max-width: 768px) {
+  button {
+    font-size: 40px;
+    padding: 10px;
+    /* margin: 10px; */
+  }
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 481px) {
+  button {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  #countDisplay {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
 }

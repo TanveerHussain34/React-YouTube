@@ -2,14 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
-function MyApp() {
-  return (
-    <div>
-      <h1>Chai aur React</h1>
-    </div>
-  );
-}
-
 // Our Custom Tree Syntax
 // const reactElement = {
 //   type: "a",
@@ -20,20 +12,26 @@ function MyApp() {
 //   child: "Click Me",
 // };
 
-const anotherElement = (
-  <a href="https://google.com" target="_black">
-    Click Me to visit Google
-  </a>
-);
-
-const userName = "Tanveer";
+// const anotherElement = (
+//   <a href="https://google.com" target="_black">
+//     Click Me to visit Google
+//   </a>
+// );
 
 // React Tree Syntax
 const reactElement = React.createElement(
-  "a",
-  { href: "https://google.com", target: "_blank" },
-  "Go to Google | ",
-  userName // variable
+  "h1",
+  null,
+  React.createElement(
+    "a",
+    { href: "https://github.com/TanveerHussain34", target: "_blank" },
+    "GitHub Profile"
+  )
 );
 
-ReactDOM.createRoot(document.getElementById("root")).render(reactElement);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <>
+    <App />
+    {reactElement}
+  </>
+);

@@ -19,10 +19,10 @@ function customRender(reactElement, mainContainer) {
 const reactElement = {
   type: "a",
   props: {
-    href: "https://google.com",
+    href: "https://linkedin.com/in/im-tanveerhussain",
     target: "_blank",
   },
-  child: "Click Me",
+  child: "LinkedIn Profile",
 };
 
 const mainContainer = document.querySelector("#root");

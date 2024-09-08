@@ -1,13 +1,13 @@
 import Greeting from "./Greeting";
 
 function App() {
-  const userName = "Tanveer";
+  const userName = "Tanveer Hussain";
   return (
     <>
       <Greeting />
       <h1>
-        This is the React Project created by {userName} Hussain using{" "}
-        <i>npm create vite@latest</i>.
+        This is the React Project created by {userName} using &ldquo;npm create
+        vite@latest&rdquo;.
       </h1>
     </>
   );

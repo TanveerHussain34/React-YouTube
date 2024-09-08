@@ -1,22 +1,22 @@
 import "./App.css";
-import Card from "./Card.jsx";
+import Card from "./Card";
 
 function App() {
   return (
     <>
-      <h1 className="bg-gray-500 p-4 rounded-lg text-white mb-4">
+      <h1 className="bg-gradient-to-br to-yellow-300 from-red-500 p-4 rounded-lg text-white mb-4 text-center text-xl sm:text-2xl lg:text-3xl">
         Welcome to Tailwind CSS
       </h1>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1">
         <Card
-          imgSrc="./public/Yellow Simple Depop Profile Picture.png"
+          imgSrc="/Yellow Simple Depop Profile Picture.png"
           userName="Tanveer"
-          about="I'm motivated final year student of IT."
+          about="I'm a motivated final year student of IT."
         />
         <Card
-          imgSrc="./public/Red White Neon Circle Instagram Profile.png"
+          imgSrc="/Red White Neon Circle Instagram Profile.png"
           userName="Hussain"
-          about="I'm passionate MERN Stack Developer."
+          about="I'm a passionate MERN Stack Developer."
         />
       </div>
     </>

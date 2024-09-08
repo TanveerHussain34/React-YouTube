@@ -2,6 +2,9 @@ import PropTypes from "prop-types";
 
 function Card(props) {
   // We can wrtie here { userName = "USERNAME", about, img } and can get the values of props by userName, about and img
+  const handleClick = () => {
+    window.open("https://github.com/TanveerHussain34", "_blank");
+  };
   return (
     <div className="relative h-[400px] w-[300px] rounded-md">
       <img
@@ -15,7 +18,10 @@ function Card(props) {
         <p className="mt-2 text-sm text-gray-300">
           {props.about || "Description"}
         </p>
-        <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white bg-transparent border-white text-align-left">
+        <button
+          onClick={handleClick}
+          className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white bg-transparent border-white text-align-left hover:bg-white hover:text-gray-900 hover:border-transparent py-2 px-4 border rounded-md"
+        >
           View Profile →
         </button>
       </div>

@@ -46,15 +46,15 @@ function App() {
     <>
       <h1>Counter Project using React</h1>
 
-      <h3>0 and 20 are minimum and maximum counter values respectively</h3>
+      <p>Range of Counter is 0 to 20</p>
 
-      <a href="https://react.dev" target="_blank">
+      <a id="upperCount" href="https://react.dev" target="_blank">
         {counter}
       </a>
 
-      <h1>{counter}</h1>
+      <h1 id="countDisplay">{counter}</h1>
 
-      <p>{counter}</p>
+      <p id="lowerCount">{counter}</p>
 
       <button onClick={addValue}>🔼</button>
 

@@ -5,8 +5,8 @@ function App() {
     <>
       <Greeting />
       <h1>
-        This is the React Project created by Tanveer Hussain using "npx
-        create-react-app".
+        This is the React Project created by Tanveer Hussain using &ldquo;npx
+        create-react-app&rdquo;.
       </h1>
     </>
   );

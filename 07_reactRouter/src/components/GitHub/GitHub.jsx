@@ -11,7 +11,7 @@ function GitHub() {
   // }, []);
 
   return (
-    <div className="flex justify-center items-center flex-col text-center m-4 bg-gray-600 text-3xl text-white p-4">
+    <div className="flex justify-center items-center flex-col text-center m-4 bg-gray-100 text-gray-600 text-3xl font-bold p-4 mt-11">
       Your GitHub followers are {data.followers}.
     </div>
   );
@@ -20,6 +20,6 @@ function GitHub() {
 export default GitHub;
 
 export const githubInfoLoader = async () => {
-  const response = await fetch("https://api.github.com/users/TanveerHussain34");
+  const response = await fetch("https://api.github.com/users/hiteshchoudhary");
   return response.json();
 };
